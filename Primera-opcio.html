@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabel Perelló - Funcionària de Carrera Cossos TIC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 50px 40px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .experience-item h3, .education-item h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+        
+        .experience-item .date, .education-item .date {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.95em;
+            transition: transform 0.3s;
+        }
+        
+        .skill-tag:hover {
+            transform: translateY(-3px);
+        }
+        
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s;
+        }
+        
+        .contact-item:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://via.placeholder.com/180" alt="Isabel Perelló" class="profile-img">
+            <h1>Isabel Perelló</h1>
+            <p>Funcionària de Carrera de Cossos TIC</p>
+        </div>
+        
+        <div class="content">
+            <!-- Experiència Professional -->
+            <div class="section">
+                <h2>Experiència Professional</h2>
+                
+                <div class="experience-item">
+                    <h3>Funcionària TIC - Administració Pública</h3>
+                    <div class="date">2020 - Actualitat</div>
+                    <p>Desenvolupament i manteniment de sistemes d'informació per a l'administració pública. Gestió de projectes tecnològics i coordinació d'equips multidisciplinaris.</p>
+                </div>
+                
+                <div class="experience-item">
+                    <h3>Analista de Sistemes - Empresa Exemple S.L.</h3>
+                    <div class="date">2017 - 2020</div>
+                    <p>Anàlisi i disseny de solucions tecnològiques. Implementació de sistemes de gestió i optimització de processos empresarials.</p>
+                </div>
+                
+                <div class="experience-item">
+                    <h3>Desenvolupadora Junior - Tech Innovate</h3>
+                    <div class="date">2015 - 2017</div>
+                    <p>Programació i desenvolupament d'aplicacions web. Col·laboració en projectes de transformació digital.</p>
+                </div>
+            </div>
+            
+            <!-- Formació -->
+            <div class="section">
+                <h2>Formació Acadèmica</h2>
+                
+                <div class="education-item">
+                    <h3>Màster en Administració de Sistemes i Xarxes</h3>
+                    <div class="date">Universitat Exemple - 2014-2015</div>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Grau en Enginyeria Informàtica</h3>
+                    <div class="date">Universitat Politècnica - 2010-2014</div>
+                </div>
+            </div>
+            
+            <!-- Habilitats Tècniques -->
+            <div class="section">
+                <h2>Habilitats Tècniques</h2>
+                <div class="skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Administració de Sistemes</span>
+                    <span class="skill-tag">Ciberseguretat</span>
+                    <span class="skill-tag">Cloud Computing</span>
+                    <span class="skill-tag">Gestió de Projectes</span>
+                    <span class="skill-tag">Bases de Dades</span>
+                </div>
+            </div>
+            
+            <!-- Contacte -->
+            <div class="section">
+                <h2>Contacte</h2>
+                <div class="contact">
+                    <a href="mailto:isabel.perello@exemple.com" class="contact-item">
+                        <span>📧</span>
+                        <span>isabel.perello@exemple.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/isabelperello" class="contact-item" target="_blank">
+                        <span>💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/isabelperello" class="contact-item" target="_blank">
+                        <span>💻</span>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
